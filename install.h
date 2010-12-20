@@ -1,5 +1,5 @@
 /*
- * Copyright (C) 2007 The Android Open Source Project
+ * Copyright (C) 2009 The Android Open Source Project
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -14,12 +14,9 @@
  * limitations under the License.
  */
 
-#ifndef RECOVERY_INSTALL_H_
-#define RECOVERY_INSTALL_H_
+#ifndef _UPDATER_INSTALL_H_
+#define _UPDATER_INSTALL_H_
 
-#include "common.h"
+void RegisterInstallFunctions();
 
-enum { INSTALL_SUCCESS, INSTALL_ERROR, INSTALL_CORRUPT, INSTALL_UPDATE_SCRIPT_MISSING, INSTALL_UPDATE_BINARY_MISSING };
-int install_package(const char *root_path);
-
-#endif  // RECOVERY_INSTALL_H_
+#endif
